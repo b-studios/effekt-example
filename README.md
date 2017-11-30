@@ -1,5 +1,5 @@
 # Effekt Example Projects
-This repo contains (almost) empty example projects to use Effekt in scala (in subproject `scala-effekt`) and dotty (in subproject `scala-dotty`).
+This repo contains (almost) empty example projects to use [Effekt](https://github.com/b-studios/scala-effekt) in scala (in subproject `scala-effekt`) and dotty (in subproject `scala-dotty`).
 
 One can observe the current differences in the interface, which already is visible in the `helloWorld.scala` file. 
 
