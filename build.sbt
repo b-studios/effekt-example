@@ -10,18 +10,24 @@ lazy val dotty = project
   .settings(name := "dotty-effekt")
   .settings(dottySettings: _*)
 
-lazy val scalaSettings = Seq(
+lazy val commonSettings = Seq(
+  resolvers += Resolver.sonatypeRepo("snapshots"),
+  resolvers += "Sonatype OSS Snapshots" at
+    "https://oss.sonatype.org/content/repositories/releases",
+
+  initialCommands in console := "import effekt._; import helloWorld._;"
+)
+
+lazy val scalaSettings = commonSettings ++ Seq(
 
   scalaVersion := "2.12.4",
 
   libraryDependencies ++= Seq(
     "de.b-studios" %% "effekt" % "0.3-SNAPSHOT",
     "de.b-studios" %% "effekt-effects" % "0.3-SNAPSHOT"
-  ),
-
-  initialCommands in console := "import effekt._; import helloWorld._;"
+  )
 )
-lazy val dottySettings = Seq(
+lazy val dottySettings = commonSettings ++ Seq(
 
   scalaVersion := "0.4.0-RC1",
 
