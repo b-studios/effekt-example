@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/b-studios/effekt-example.svg?branch=master)](https://travis-ci.org/b-studios/effekt-example)
+
 # Effekt Example Projects
 This repo contains (almost) empty example projects to use [Effekt](https://github.com/b-studios/scala-effekt) in scala (in subproject `scala-effekt`) and dotty (in subproject `scala-dotty`).
 
